@@ -13,8 +13,8 @@ print("-"*20)
 acquisition_group = str(input("Enter the acquisition group name folder: "))
 acquisition_type = str(input("Enter the acquisition type\n Active, Closing or Completed Buildings: "))
 print("-"*20)
-general_path = fr"P:\PACS\Finance\Acquistions & New Build\{acquisition_type}\{acquisition_group}\Proformas\*.xlsx"
-save_path = fr"P:\PACS\Finance\Acquistions & New Build\REPORTING_COMPILE"
+general_path = fr"P:\Finance\Acquistions & New Build\{acquisition_type}\{acquisition_group}\Proformas\*.xlsx"
+save_path = fr"P:\Finance\Acquistions & New Build\REPORTING_COMPILE"
 
 #######################################################################
 
