@@ -10,10 +10,21 @@ import openpyxl
 print("-"*20)
 print("Case sensitive, Please Match the Exact Folder Name")
 print("-"*20)
-acquisition_group = str(input("Enter the acquisition group name folder: "))
+print()
+acquisition_group = str(input("Enter the acquisition group folder name: "))
 acquisition_type = str(input("Enter the acquisition type\n Active, Closing or Completed Buildings: "))
+lower_folder = str(input("Is there a folder that is further down from the Proforma's folder? Y or N"))
+if lower_folder == 'Y'
+    yes = str(input("Please enter the subfolder:"))
+    general_path = fr"P:\Finance\Acquistions & New Build\{acquisition_type}\{acquisition_group}\Proformas\{yes}\*.xlsx"
+else:
+    general_path = fr"P:\Finance\Acquistions & New Build\{acquisition_type}\{acquisition_group}\Proformas\*.xlsx"
+    pass
+
 print("-"*20)
-general_path = fr"P:\Finance\Acquistions & New Build\{acquisition_type}\{acquisition_group}\Proformas\*.xlsx"
+print()
+print("The files will be saved at:  Finance\Acquistions & New Build\REPORTING_COMPILE")
+print("-"*20)
 save_path = fr"P:\Finance\Acquistions & New Build\REPORTING_COMPILE"
 
 #######################################################################
